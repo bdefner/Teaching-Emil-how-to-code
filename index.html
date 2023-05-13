@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body id="top">
+    <nav>
+      <a>
+        <img
+          src="./public/emil-logo.png"
+          alt="logo"
+          id="my-logo-in-nav"
+        />
+      </a>
+      <ul>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#about-section">About</a></li>
+        <li><a>My apps</a></li>
+      </ul>
+    </nav>
+    <section class="hero-section">
+      <h1>Welcome!</h1>
+    </section>
+    <section
+      class="main-section"
+      id="about-section"
+    >
+      <div class="section-container">
+        <h2>About me</h2>
+        <div class="column-container">
+          <img
+            src="./public/emil-profil.jpg"
+            alt="profile of myself"
+            class="round-masked-picture"
+          />
+          <p>
+            A curious and determined teenage boy, embarked on a transformative
+            journey when he delved into the world of coding. With a voracious
+            appetite for knowledge, he immersed himself in programming
+            languages, algorithms, and problem-solving techniques. Guided by
+            online tutorials and a supportive coding community, Emil discovered
+            the power of logic and creativity intertwined within lines of code.
+            As he tinkered with software and built his own applications, Emil
+            witnessed his ideas come to life, empowering him with a sense of
+            accomplishment and boundless possibilities. From solving complex
+            puzzles to crafting innovative solutions, Emil's newfound passion
+            for coding fueled his desire to create, innovate, and shape the
+            future through technology.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 1.3em;
+  }
+
+  nav {
+    width: max-content;
+    margin: 0 auto;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+
+  nav ul li a {
+    padding: 3px 8px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+  }
+
+  #my-logo-in-nav {
+    max-width: 80px;
+  }
+
+  .hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-section h1 {
+    font-size: 90px;
+    transition: color 0.5s ease;
+  }
+
+  .hero-section h1:hover {
+    color: hotpink;
+  }
+
+  .main-section {
+    padding: 50px 0 100px 0;
+    display: flex;
+    justify-content: center;
+  }
+  .section-container {
+    width: 100%;
+    max-width: 980px;
+    padding: 25px 50px;
+  }
+  .section-container h2 {
+    font-size: 64px;
+    margin-bottom: 100px;
+  }
+
+  .column-container {
+    display: flex;
+    align-items: top;
+  }
+  .column-container p {
+    margin: 50px;
+  }
+
+  .round-masked-picture {
+    max-width: 250px;
+    margin: 50px;
+    border-radius: 50%;
+  }
+</style>
