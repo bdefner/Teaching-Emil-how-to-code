@@ -13,44 +13,24 @@
     <title>Document</title>
   </head>
   <body id="top">
-    <nav>
-      <a>
-        <img
-          src="./public/emil-logo.png"
-          alt="logo"
-          id="my-logo-in-nav"
-        />
-      </a>
-      <ul>
-        <li><a href="#top">Home</a></li>
-        <li><a href="#about-section">About</a></li>
-        <li><a>My apps</a></li>
-      </ul>
-    </nav>
+    <div id="nav-wrap">
+      <nav>
+        <a>
+          <img
+            src="./public/emil-logo.png"
+            alt="logo"
+            id="my-logo-in-nav"
+          />
+        </a>
+        <ul>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#about-section">About</a></li>
+          <li><a>My apps</a></li>
+        </ul>
+      </nav>
+    </div>
     <section class="hero-section">
       <h1>Welcome!</h1>
-    </br>
-      <h2>Text</h2>
-    </section>
-    <section class="picture-galerie-section">
-      <div class="picture-galerie-wrap">
-        <div class="image-galerie-item-wrap">
-          <img src="./public/imgs/lama1.jpg" alt="Lama" />
-        </div>
-        <div class="image-galerie-item-wrap">
-          <img src="./public/imgs/lama2.jpg" alt="Lama" />
-        </div>
-        <div class="image-galerie-item-wrap">
-          <img src="./public/imgs/lama3.jpg" alt="Lama" />
-        </div>
-        <div class="image-galerie-item-wrap">
-          <img src="./public/imgs/lama4.jpg" alt="Lama" />
-        </div>
-        <div class="image-galerie-item-wrap">
-          <img src="./public/imgs/lama5.jpg" alt="Lama" />
-        </div>
-      </div>
-
     </section>
     <section
       class="main-section"
@@ -96,6 +76,12 @@
     line-height: 1.3em;
   }
 
+  #nav-wrap {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+  }
+
   nav {
     width: max-content;
     margin: 0 auto;
@@ -127,7 +113,6 @@
   .hero-section {
     height: 100vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
@@ -162,32 +147,6 @@
   }
   .column-container p {
     margin: 50px;
-  }
-
-  .picture-galerie-wrap {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .image-galerie-item-wrap {
-    margin: 10px;
-    width: 20%;
-    min-width: 200px;
-    height: 200px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5%;
-  }
-
-  .image-galerie-item-wrap img {
-    height: 100%;
-    transition: all 1s ease;
-  }
-
-  .image-galerie-item-wrap img:hover {
-    height: 110%;
   }
 
   .round-masked-picture {
